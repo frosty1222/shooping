@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Create new</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function myFunction() {
+            var ht = document.getElementById("name").value;
+            var ns = document.getElementById("birth").value;
+            var qq = document.getElementById("hometown").value;
+            var noio = document.getElementById("address").value;
+            var t = document.getElementById("school").value;
+            var cn = document.getElementById("major").value;
+
+
+            document.getElementById("name1").innerHTML = ht;
+            document.getElementById("birth1").innerHTML = ns
+            document.getElementById("hometown1").innerHTML = qq;
+            document.getElementById("address1").innerHTML = noio;
+            document.getElementById("school1").innerHTML = t;
+            document.getElementById("major1").innerHTML = cn;
+
+        }
+    </script>
+</head>
+
+<body>  
+    <!-- Button to Open the Modal -->
+    <img src="">
+    <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1"> Create new </button>
+    </center>
+    <!-- The Modal -->
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Register</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="form-text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Birth</label>
+                            <input type="form-text" class="form-control" id="birth">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Hometown</label>
+                            <input type="form-text" class="form-control" id="hometown">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Home address</label>
+                            <input type="form-text" class="form-control" id="address">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">School</label>
+                            <input type="form-text" class="form-control" id="school">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Major</label>
+                            <input type="form-text" class="form-control" id="major">
+                        </div>
+                    </form>
+                    <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myDialog"
+                            onclick="myFunction()"> submit </button>
+                        <div>
+                            <dialog class="modal" id="myDialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">the information : </h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <div class="mb-1">
+                                                <label>Name : </label> <label id="name1"></label>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Birth : </label> <label id="birth1"></label>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Hometown : </label> <label id="hometown1"></label>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Address : </label> <label id="address1"></label>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>School : </label> <label id="school1"></label>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Major : </label> <label id="major1"></label>
+                                            </div>
+                            </dialog>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"> OK </button>
+
+</html>
